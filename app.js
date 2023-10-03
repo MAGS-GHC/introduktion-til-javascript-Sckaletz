@@ -1,9 +1,6 @@
-//Skriv alt jeres kode her
+// Console.log() - Printopgaver
 
-console.log(
-  "Opgave 1.1 - Lav et program, som skriver “Hello World” i konsollen"
-);
-//Lav jeres svar her
+// Opgave 1.1
 console.log("Hello World");
 
 // Opgave 1.2
@@ -50,6 +47,10 @@ console.log(number += "23") // Tjekker om 23 er magen til 23
 console.log(number -= "46") // 23 = 23 - 46
 console.log(number != "23") // 23 er ikke lig med string 23
 console.log(number **= 2) // 23 = 23 ** 2
+
+// ----------------------------------------------------------
+
+// Conditionals - If / Else statements
 
 // Opgave 2.1
 let newnumber = 5
