@@ -1,7 +1,7 @@
 // Conditionals
 
 // Opgave 2.1
-let tal = 10
+let tal = 10;
 if (tal % 2 == 0){
     console.log("Et lige tal");
 } else{
@@ -9,7 +9,7 @@ if (tal % 2 == 0){
 }
 
 // Opgave 2.2
-let tal2 = 11   
+let tal2 = 11;   
 if (tal2 % 5 == 0){
     console.log("5 går op i " + tal2);
 } else{
@@ -17,7 +17,7 @@ if (tal2 % 5 == 0){
 }
 
 // Opgave 2.3
-let tal3 = Math.floor(Math.random()*101)
+let tal3 = Math.floor(Math.random()*101);
 if (tal3 % 5 == 0){
     console.log("5 går op i " + tal3);
 } else{
@@ -25,9 +25,9 @@ if (tal3 % 5 == 0){
 }
 
 // Opgave 2.4
-let a = 50
-let b = 33
-let c = 60
+let a = 50;
+let b = 33;
+let c = 60;
 if (a > b && a > c){
     console.log("A er størst");
 } else if (b > a && b > c){
@@ -37,7 +37,7 @@ if (a > b && a > c){
 }
 
 // Opgave 2.5
-let temp = 40
+let temp = 40;
 if (temp <= 0){
     console.log("Det er frostvejr");
 } else if (temp >= 1 && temp <= 10){
@@ -53,7 +53,7 @@ if (temp <= 0){
 }
 
 // Opgave 2.6
-let dag = 7
+let dag = 7;
 if (dag == 1){
     console.log("Mandag");
 } else if (dag == 2){
