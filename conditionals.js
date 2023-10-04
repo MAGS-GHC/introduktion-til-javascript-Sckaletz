@@ -69,5 +69,5 @@ if (dag == 1){
 } else if (dag == 7){
     console.log("Søndag");
 } else {
-    console.log("Taller er ikke en ugedag");
+    console.log("Tallet er ikke en ugedag");
 }

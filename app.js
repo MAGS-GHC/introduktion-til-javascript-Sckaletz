@@ -37,13 +37,13 @@ let number = 23
 console.log(number) // viser tallet 23
 console.log(number = "23") // Ændring fra int til string
 console.log(number == "23") // Bool - tjekker om "23" er lig "23"
-console.log(number === "23") //
-console.log(number -= 23) //
-console.log(number += 23) //
-console.log(number += "23") //
-console.log(number -= "46") //
-console.log(number != "23") //
-console.log(number **= 2) //
+console.log(number === "23") // Identiske
+console.log(number -= 23) // (23 - 23)
+console.log(number += 23) // 23
+console.log(number += "23") // 23 + 23 = 2323
+console.log(number -= "46") // 2323 - 46 = 2277
+console.log(number != "23") // Bool - tjekker om 2277 = "23"
+console.log(number **= 2) // 2277 x 2277 
 
 
 
