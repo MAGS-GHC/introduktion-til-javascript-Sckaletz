@@ -4,12 +4,14 @@ function myFunction() {
    }
 myFunction();
 
+
 // Opgave 5.2
 function addNumbers(a, b){
     return a + b;
 }
 let result = addNumbers(3, 18);
 console.log(result);
+
 
 // Opgave 5.3
 function trueFalse(x){
@@ -21,6 +23,7 @@ function trueFalse(x){
 }
 trueFalse("Ja");
 
+
 // Opgave 5.4
 const password = "AbCdEf"
 function pswdCheck(pswd){
@@ -31,6 +34,7 @@ function pswdCheck(pswd){
     }
 }
 pswdCheck("AbCdEf")
+
 
 // Opgave 5.5
 let userName = "Mags";
