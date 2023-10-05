@@ -41,14 +41,4 @@ console.log(number += 23) // 23
 console.log(number += "23") // 23 + 23 = 2323
 console.log(number -= "46") // 2323 - 46 = 2277
 console.log(number != "23") // Bool - tjekker om 2277 = "23"
-console.log(number **= 2) // 2277 x 2277 
-
-
-
-
-
-
-
-
-
-
+console.log(number **= 2) // 2277 x 2277
