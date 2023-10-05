@@ -1,5 +1,3 @@
-// Conditionals
-
 // Opgave 2.1
 let tal = 10;
 if (tal % 2 == 0){
