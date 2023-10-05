@@ -20,3 +20,26 @@ function trueFalse(x){
     }
 }
 trueFalse("Ja");
+
+// Opgave 5.4
+const password = "AbCdEf"
+function pswdCheck(pswd){
+    if (pswd === password){
+        return console.log("True");
+    } else {
+        return console.log("False");
+    }
+}
+pswdCheck("AbCdEf")
+
+// Opgave 5.5
+let userName = "Mags";
+
+function checkUserName(user){
+    if (user.toLowerCase() === userName.toLowerCase()){
+        return console.log("True");
+    } else {
+        return console.log("False");
+    }
+}
+checkUserName("mags")
