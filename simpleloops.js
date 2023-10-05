@@ -3,6 +3,7 @@ for (let i = 1; i <= 100; i++){
     console.log(i)
 }
 
+
 // Opgave 3.2
 col1 = 0;
 col2 = 1;
@@ -13,6 +14,7 @@ for (let i = 0; i <= 100; i++) {
     col2++;
     col3++;
 }
+
 
 // Opgave 3.3
 for (let i = 1; i <= 100; i++){
@@ -43,6 +45,7 @@ while (i < 100){
     }
 }
 
+
 // Opgave 3.4
 let n = 1
 for (let i = 10; i >= 1; i--){
@@ -61,6 +64,7 @@ while (i2 >= 1){
         console.log(n2);
     }    
 }
+
 
 // Opgave 3.5
 let a = 1
