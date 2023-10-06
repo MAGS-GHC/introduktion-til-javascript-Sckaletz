@@ -15,7 +15,7 @@ console.log(result);
 
 // Opgave 5.3
 function trueFalse(x){
-    if (x === "Ja"){
+    if (x.toLowerCase() === "ja"){
         return console.log("True");
     } else {
         return console.log("False");
