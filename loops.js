@@ -1,4 +1,3 @@
-/*
 // Opgave 6.1
 let talrække = [0, 12, 0, 22, 300, 4, 5];
 let sum = 0;
@@ -13,7 +12,6 @@ let talrække2 = [0, 12, 0, 22, 300, 4, 5];
 talrække2.forEach((tal) => {
     console.log(tal);
 })
-*/
 
 
 // Opgave 6.3
@@ -74,10 +72,30 @@ gennemsnit(talrække7);
 
 
 // Opgave 6.7
+let talrække8 = [0, 12, 0, 22, 300, 4, 5, 1000, -50, 32];
+function varians(talrækkeListe) {
+    let talrækkeSum = 0;
+    let talrække8Gennemsnit = 0;
+    for (let index in talrækkeListe) {
+        talrækkeSum += talrækkeListe[index];
+        if (talrækkeListe.length === Number(index)+1) {
+            talrække8Gennemsnit = talrækkeSum / talrækkeListe.length;
+            console.log("Gennemsnit: " + talrække8Gennemsnit);
+        }
+    }
+
+    let talrække8Varians = 0;
+    for (let index in talrækkeListe) {
+        let mellemRegningVariabel = (talrækkeListe[index] - talrække8Gennemsnit) ** 2
+        talrække8Varians += mellemRegningVariabel;
+    }
+    talrække8Varians = talrække8Varians / talrækkeListe.length;
+    console.log("Varians: " + talrække8Varians);
+}
+varians(talrække8);
 
 
-
-// Opgave 6.8
+// Opgave 6.8 (ikke færdig)
 const person1 = {
     firstName: "Anders",
     lastName: "Andersen",
