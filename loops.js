@@ -95,7 +95,7 @@ function varians(talrækkeListe) {
 varians(talrække8);
 
 
-// Opgave 6.8 (ikke færdig)
+// Opgave 6.8
 const person1 = {
     firstName: "Anders",
     lastName: "Andersen",
@@ -109,11 +109,38 @@ const person2 = {
     eyeColor: "blå"
 };
 const person3 = {
-    firstName: "Han",
+    firstName: "Hans",
     lastName: "Hansen",
     age: 55,
-    eyeColor: "brun"
+    eyeColor: "røde"
 };
-if (age > 30 && eyeColor === "blå" && eyeColor === "grøn" && eyecolor === "rød"){
-    console.log(firstName, lastName);
+
+function personChecker(person) {
+    const accepteredeØjenfarver = ["blå", "grøn", "røde"];
+    if (person.age > 30 && accepteredeØjenfarver.includes(person.eyeColor)) {
+        console.log(person.firstName, person.lastName);
+        console.log(`Alder: ${person.age}`);
+        console.log(`Øjenfarve: ${person.eyeColor}`);
+    } 
 }
+personChecker(person3)
+
+
+// Opgave 6.9
+function stjernePattern(linjer) {
+    let linjerDeltITo = Math.ceil(linjer / 2);
+    let stjernerStart = "";
+    for (let i = 1; i <= linjerDeltITo; i++) {
+        stjernerStart += "*";
+        console.log(stjernerStart);
+    }
+    if (linjer % 2 === 0) {
+        console.log(stjernerStart)
+    }
+    for (let i = linjerDeltITo - 1; i >= 1; i--) {
+        stjernerStart = stjernerStart.slice(0, stjernerStart.length - 1);
+        console.log(stjernerStart);
+    }
+}
+let antalLinjer = 6;
+stjernePattern(antalLinjer)
