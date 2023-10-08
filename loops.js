@@ -104,5 +104,14 @@ const person3 = {
     firstName: "Hans",
     lastName: "Hansen",
     age: 55,
-    eyeColor: "røde"
+    eyeColor: "brun"
 };
+function person (person){
+    let entries = Object.entries(person);
+    if (person.age > 30 && (person.eyeColor === "blå" || person.eyeColor === "grøn" || person.eyeColor === "red")){
+        console.log(person.firstName, person.lastName);
+    } else{
+        console.log("Ingen personer fundet!");
+    }
+}
+person(person2);
