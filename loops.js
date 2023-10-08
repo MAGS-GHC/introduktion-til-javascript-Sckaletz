@@ -60,37 +60,29 @@ for (let index in talrække6){
 let talrække7 = [0, 12, 0, 22, 300, 4, 5, 1000, -50, 32];
 function gennemsnit(talrækkeListe){
     let talrækkeSum = 0;
+    let talrække7Gennemsnit = 0;
     for (let index in talrækkeListe) {
         talrækkeSum += talrækkeListe[index];
         if (talrækkeListe.length === Number(index)+1) {
-            let talrække7Gennemsnit = talrækkeSum / talrækkeListe.length
+            talrække7Gennemsnit = talrækkeSum / talrækkeListe.length
             console.log(talrække7Gennemsnit);
         }
     }
+    return talrække7Gennemsnit;
 }
 gennemsnit(talrække7);
 
 
 // Opgave 6.7
 let talrække8 = [0, 12, 0, 22, 300, 4, 5, 1000, -50, 32];
-function varians(talrækkeListe) {
-    let talrækkeSum = 0;
-    let talrække8Gennemsnit = 0;
-    for (let index in talrækkeListe) {
-        talrækkeSum += talrækkeListe[index];
-        if (talrækkeListe.length === Number(index)+1) {
-            talrække8Gennemsnit = talrækkeSum / talrækkeListe.length;
-            console.log("Gennemsnit: " + talrække8Gennemsnit);
-        }
+function varians(talrækkeliste2){
+    let middelvaerdi = gennemsnit(talrækkeliste2);
+    let varianspart = 0;
+    for (let index in talrækkeliste2){
+        varianspart += ((talrækkeliste2[index]-middelvaerdi)**2);
     }
-
-    let talrække8Varians = 0;
-    for (let index in talrækkeListe) {
-        let mellemRegningVariabel = (talrækkeListe[index] - talrække8Gennemsnit) ** 2
-        talrække8Varians += mellemRegningVariabel;
-    }
-    talrække8Varians = talrække8Varians / talrækkeListe.length;
-    console.log("Varians: " + talrække8Varians);
+    let varians = varianspart / talrækkeliste2.length;
+    console.log(`Varians er: ${varians}`);
 }
 varians(talrække8);
 
@@ -114,33 +106,3 @@ const person3 = {
     age: 55,
     eyeColor: "røde"
 };
-
-function personChecker(person) {
-    const accepteredeØjenfarver = ["blå", "grøn", "røde"];
-    if (person.age > 30 && accepteredeØjenfarver.includes(person.eyeColor)) {
-        console.log(person.firstName, person.lastName);
-        console.log(`Alder: ${person.age}`);
-        console.log(`Øjenfarve: ${person.eyeColor}`);
-    } 
-}
-personChecker(person3)
-
-
-// Opgave 6.9
-function stjernePattern(linjer) {
-    let linjerDeltITo = Math.ceil(linjer / 2);
-    let stjernerStart = "";
-    for (let i = 1; i <= linjerDeltITo; i++) {
-        stjernerStart += "*";
-        console.log(stjernerStart);
-    }
-    if (linjer % 2 === 0) {
-        console.log(stjernerStart)
-    }
-    for (let i = linjerDeltITo - 1; i >= 1; i--) {
-        stjernerStart = stjernerStart.slice(0, stjernerStart.length - 1);
-        console.log(stjernerStart);
-    }
-}
-let antalLinjer = 6;
-stjernePattern(antalLinjer)
