@@ -65,9 +65,9 @@ function gennemsnit(talrækkeListe){
         talrækkeSum += talrækkeListe[index];
         if (talrækkeListe.length === Number(index)+1) {
             talrække7Gennemsnit = talrækkeSum / talrækkeListe.length
-            console.log(talrække7Gennemsnit);
         }
     }
+    console.log(talrække7Gennemsnit);
     return talrække7Gennemsnit;
 }
 gennemsnit(talrække7);
